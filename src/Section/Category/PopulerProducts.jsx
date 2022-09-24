@@ -3,7 +3,7 @@ import style from "./populerProducts.module.css";
 import { data } from "./category";
 
 const PopulerProduct = () => {
-  console.log(typeof data);
+  
   return (
     <div className={style.populerCategory}>
       <h4 className={style.headerTag}>Populer Product Category</h4>
