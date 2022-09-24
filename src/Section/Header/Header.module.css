@@ -1,0 +1,201 @@
+.header {
+  color: white;
+  background-color: #031424;
+  padding: 10px 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.headerParent {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.headerLeftChild {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 45%;
+  position: relative;
+}
+
+.search input {
+  height: 44px;
+  width: 80%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 50px;
+  outline: none;
+}
+
+.search button {
+  color: white;
+  width: 20%;
+  background-color: #ef262c;
+  height: 52px;
+  font-size: 18px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+}
+
+.headerRightChild {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 30%;
+}
+
+.headerRightChildSelection {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.downArrow {
+  width: 8px;
+}
+
+.downArrowMedium {
+  width: 12px;
+}
+
+.faIconColor {
+  border: 2px solid #ef262c;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.headerChildIcon {
+  display: flex;
+  flex-basis: 25%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.loginText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  font-size: 13px;
+}
+
+.loginText p {
+  margin: 0;
+}
+
+.signIn {
+  color: gray;
+}
+
+.fav,
+.cart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favNumber {
+  background-color: red;
+  color: white;
+  padding: 1.5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: -16px;
+  right: -5px;
+}
+
+.cartNumber {
+  background-color: red;
+  color: white;
+  padding: 1.5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  top: -16px;
+  right: -5px;
+}
+
+.topCategories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 16px;
+  background-color: #ef262c;
+  padding: 0 28px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.deals {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.discount,
+.discountInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.discountText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.discountText p {
+  margin: 0;
+}
+
+.discountText p:first-child {
+  color: gray;
+}
+
+.discountText p:last-child {
+  color: #ef262c;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
