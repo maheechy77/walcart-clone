@@ -1,50 +1,22 @@
 import React from "react";
 import style from "./Header.module.css";
-import { BiHeart, BiSearchAlt2 } from "react-icons/bi";
+import { BiHeart } from "react-icons/bi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaRegUserCircle,FaPercentage } from "react-icons/fa";
+import { FaRegUserCircle, FaPercentage } from "react-icons/fa";
+import NavbarAboutUs from "../../components/Navbars/NavbarAboutUs";
+import Search from "../../components/Search/Search";
+import Deals from "../../components/Deals/Deals";
 
 const Header = () => {
   return (
     <div className={style.header}>
       <div className={style.headerParent}>
-        <div className={style.headerLeftChild}>
-          <p>About US</p>
-          <p>|</p>
-          <p>My Account</p>
-          <p>|</p>
-          <p>Featured Products</p>
-          <p>|</p>
-          <p>Contact</p>
-        </div>
-        <div className={style.headerRightChild}>
-          <p>Order Tracking</p>
-          <p className={style.headerRightChildSelection}>
-            English{" "}
-            <img
-              className={style.downArrow}
-              alt="down"
-              src="svg/down-arrow.svg"
-            />
-          </p>
-          <p className={style.headerRightChildSelection}>
-            USD English{" "}
-            <img
-              className={style.downArrow}
-              alt="down"
-              src="svg/down-arrow.svg"
-            />
-          </p>
-        </div>
+        <NavbarAboutUs />
       </div>
       <div className={style.headerParent}>
         <h2>WALCART</h2>
-        <div className={style.search}>
-          <input type={"text"} placeholder="What do you want to order ?" />
-          <BiSearchAlt2 className={style.searchIcon} fill="gray" size={24} />
-          <button>Search</button>
-        </div>
+        <Search />
         <div className={style.headerChildIcon}>
           <p className={style.login}>
             <FaRegUserCircle size={28} />
@@ -75,27 +47,18 @@ const Header = () => {
           />
         </div>
         <div className={style.deals}>
-          <div className={style.flex}>
-            <p>Exclusive deals</p>
-            <img
-              className={style.downArrowMedium}
-              alt="down"
-              src="svg/down-arrow.svg"
-            />
-          </div>
-          <div className={style.flex}>
-            <p>Smart watches</p>
-            <img
-              className={style.downArrowMedium}
-              alt="down"
-              src="svg/down-arrow.svg"
-            />
-          </div>
-          <p>Cellphones</p>
-          <p>Headphones</p>
+          <Deals name={"Exclusive deals"} showIcon={true} />
+          <Deals name={"Smart watches"} showIcon={true}/>
+          <Deals name={"Cellphones"} showIcon={false}/>
+          <Deals name={"Headphones"} showIcon={false} />
         </div>
+
         <div className={style.discount}>
-          <FaPercentage className={style.faIconColor} fill="#ef262c" size={12} />
+          <FaPercentage
+            className={style.faIconColor}
+            fill="#ef262c"
+            size={12}
+          />
           <div className={style.discountInfo}>
             <div className={style.discountText}>
               <p>On This Weekend</p>

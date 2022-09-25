@@ -1,0 +1,22 @@
+.headerLeftChild {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+.headerRightChild {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 30%;
+  gap: 44px;
+}
+
+.headerRightChildSelection {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.downArrow {
+  width: 8px;
+}

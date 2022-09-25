@@ -13,63 +13,17 @@
   font-size: 12px;
 }
 
-.headerLeftChild {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 30%;
-}
-
-.search {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-basis: 45%;
-  position: relative;
-}
-
-.search input {
-  height: 44px;
-  width: 80%;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding-left: 50px;
-  outline: none;
-}
-
-.search button {
-  color: white;
-  width: 20%;
-  background-color: #ef262c;
-  height: 52px;
-  font-size: 18px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.searchIcon {
-  position: absolute;
-  left: 14px;
-}
-
-.headerRightChild {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-basis: 30%;
-}
-
-.headerRightChildSelection {
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
-
-.downArrow {
-  width: 8px;
-}
-
 .downArrowMedium {
   width: 12px;
+}
+
+.deals {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-size: 14px;
 }
 
 .faIconColor {
@@ -81,7 +35,9 @@
 .headerChildIcon {
   display: flex;
   flex-basis: 25%;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 44px;
   width: 100%;
 }
 
@@ -156,15 +112,6 @@
   border-top-right-radius: 5px;
 }
 
-.deals {
-  flex-basis: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  font-size: 14px;
-}
-
 .discount,
 .discountInfo {
   display: flex;
@@ -191,11 +138,4 @@
   color: #ef262c;
   font-size: 14px;
   font-weight: 700;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 14px;
 }
